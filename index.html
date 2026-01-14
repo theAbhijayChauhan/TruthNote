@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Notepad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shareable Notepad</h1>
+        <p class="subtitle">Write notes and share via URL</p>
+        
+        <div class="editor-section">
+            <textarea 
+                id="notes" 
+                placeholder="Start typing your notes here..."
+                spellcheck="false"
+            ></textarea>
+        </div>
+        
+        <div class="actions">
+            <button id="copyBtn" class="btn primary">Copy Shareable Link</button>
+            <button id="clearBtn" class="btn secondary">Clear Notes</button>
+        </div>
+        
+        <div id="urlDisplay" class="url-display">
+            <input type="text" id="urlInput" readonly>
+            <button id="copyUrlBtn" class="btn-icon" title="Copy URL">📋</button>
+        </div>
+        
+        <div class="info">
+            <p>📝 Notes are stored in the URL. Share the link to transfer your notes to others.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
